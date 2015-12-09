@@ -1,0 +1,22 @@
+import numpy as np
+
+import cv2
+
+def generate_model(grad_img, size=(6,6)):
+	img = cv2.imread(grad_img)
+	h, w = img.shape[:2]
+	cv2.imshow('model', img)
+	cv2.waitKey(0)
+	model = np.array((h,w))
+	x_step , y_step = w/size[0], h/size[1]
+
+	# main regions
+	# head = ()
+
+
+def main():
+
+if __name__ == '__main__':
+	main()
+
+
